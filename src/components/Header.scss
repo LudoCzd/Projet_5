@@ -1,0 +1,17 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  align-items: center;
+}
+nav img {
+  width: 10%;
+}
+.lien-header a {
+  text-decoration: none;
+  color: black;
+  margin-left: 40px;
+}
+.lien-header a:hover {
+  text-decoration: underline;
+}

@@ -3,7 +3,7 @@ import Layout from "./Layout";
 import Home from "../pages/Home";
 import About from "../pages/About";
 import Logement from "../pages/Logement";
-import Error from "../pages/Error";
+import Error404 from "../pages/Error404";
 
 function Router() {
   return (
@@ -12,7 +12,7 @@ function Router() {
         <Route path="/" element={Home} />
         <Route path="/a-propos" element={About} />
         <Route path="/logement/:id" element={Logement} />
-        <Route path="/*" element={Error} />
+        <Route path="/*" element={Error404} />
       </Route>
     </Routes>
   );
