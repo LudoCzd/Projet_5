@@ -1,0 +1,17 @@
+.tagList ul {
+  padding: 0;
+}
+
+.tagList li {
+  list-style: none;
+  background-color: var(--main-color);
+  color: white;
+  border-radius: 50px;
+  width: 300px;
+  font-size: 15px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}

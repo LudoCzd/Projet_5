@@ -16,6 +16,7 @@ function Home() {
       <div className="listCard">
         {logements.map((logement) => (
           <Card
+            id={logement.id}
             key={logement.id}
             title={logement.title}
             cover={logement.cover}
