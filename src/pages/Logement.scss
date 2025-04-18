@@ -7,3 +7,12 @@
   gap: 80px;
   width: 100%;
 }
+
+.collapseLogement ul {
+  padding: 0;
+  margin: 0;
+}
+.collapseLogement li {
+  list-style: none;
+  display: flex;
+}

@@ -3,7 +3,7 @@ import "./Collapse.scss";
 import { useState } from "react";
 import fleche from "../assets/images/fleche.png";
 
-function Collapse({ title, texte }) {
+function Collapse({ title, children }) {
   const [isOpen, setIsOpen] = useState(false);
 
   function handleClick() {
@@ -20,9 +20,7 @@ function Collapse({ title, texte }) {
           onClick={handleClick}
         />
       </div>
-      <div className={`collapse__text ${isOpen ? "open" : ""}`}>
-        <p>{texte}</p>
-      </div>
+      <div className={`collapse__text ${isOpen ? "open" : ""}`}>{children}</div>
     </div>
   );
 }

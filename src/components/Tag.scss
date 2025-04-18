@@ -1,5 +1,8 @@
 .tagList ul {
   padding: 0;
+  display: flex;
+  gap: 15px;
+  margin: 0;
 }
 
 .tagList li {
@@ -7,11 +10,11 @@
   background-color: var(--main-color);
   color: white;
   border-radius: 50px;
-  width: 300px;
-  font-size: 15px;
+  width: 150px;
+  font-size: 14px;
+  font-weight: bold;
   height: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 50px;
 }

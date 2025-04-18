@@ -19,7 +19,7 @@ function Slideshow({ pictures }) {
         <img
           src={pictures[current]}
           className="currentImage"
-          alt={`photo ${current + 1}sur${pictures.length}`}
+          alt={`Photo ${current + 1}sur${pictures.length}`}
         />
         <img
           id="flechesChange"

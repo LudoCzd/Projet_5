@@ -19,17 +19,21 @@ function Logement() {
         <p>{logement.location}</p>
         <Tag
           tag={logement.tags.map((tag) => (
-            <li>{tag}</li>
+            <li key={tag}>{tag}</li>
           ))}
         />
       </div>
       <div className="collapseLogement">
-        <Collapse title="Description" texte={logement.description} />
+        <Collapse title="Description" children={logement.description} />
         <Collapse
           title="Équipements"
-          texte={logement.equipments.map((equipement) => (
-            <li>{equipement}</li>
-          ))}
+          children={
+            <ul>
+              {logement.equipments.map((equipement) => (
+                <li key={equipement}>{equipement}</li>
+              ))}
+            </ul>
+          }
         />
       </div>
     </div>
