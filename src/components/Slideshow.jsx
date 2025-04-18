@@ -18,24 +18,28 @@ function Slideshow({ pictures }) {
       <div className="imagesLogement">
         <img
           src={pictures[current]}
-          className="currentImage"
-          alt={`Photo ${current + 1}sur${pictures.length}`}
+          className="imagePrincipale"
+          alt={`Photo ${current + 1} sur ${pictures.length}`}
         />
-        <img
-          id="flechesChange"
-          src={flechePrec}
-          alt="Image précédente"
-          onClick={imagePrec}
-        />
-        <img
-          id="flechesChange"
-          src={flecheSuiv}
-          alt="Image Suivante"
-          onClick={imageSuiv}
-        />
-        <span className="currentImage">
-          {current + 1}/{pictures.length}
-        </span>
+        {pictures.length > 1 && (
+          <>
+            <img
+              src={flechePrec}
+              alt="Image précédente"
+              className="fleche fleche--gauche"
+              onClick={imagePrec}
+            />
+            <img
+              src={flecheSuiv}
+              alt="Image suivante"
+              className="fleche fleche--droite"
+              onClick={imageSuiv}
+            />
+            <span className="currentImage">
+              {current + 1}/{pictures.length}
+            </span>
+          </>
+        )}
       </div>
     </div>
   );

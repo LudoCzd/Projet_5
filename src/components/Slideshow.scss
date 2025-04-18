@@ -1,11 +1,25 @@
-.currentImage {
+.imagePrincipale {
   margin-top: 20px;
   width: 100%;
   height: 400px;
   object-fit: cover;
   border-radius: 25px;
+  position: relative;
 }
-
-#flechesChange {
+.fleche {
+  border: solid;
+  position: absolute;
+  top: 30%;
+}
+.fleche .fleche--droite {
+  right: 100%;
+}
+.fleche .fleche--gauche {
+  left: 100%;
+}
+.imageLogement {
+  position: relative;
+}
+.currentImage {
   border: solid;
 }

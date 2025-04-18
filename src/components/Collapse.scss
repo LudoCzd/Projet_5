@@ -27,11 +27,11 @@
   opacity: 0;
   transition: max-height 0.2s ease, opacity 0.2s ease;
   margin: 0;
-  padding: 15px;
 }
 .collapse__text.open {
   max-height: 500px;
   opacity: 1;
+  padding: 15px;
 }
 
 .collapse__arrow {
