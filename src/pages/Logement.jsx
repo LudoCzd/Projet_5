@@ -5,6 +5,8 @@ import Slideshow from "../components/SlideShow";
 import Collapse from "../components/Collapse";
 import Tag from "../components/Tag";
 import "./Logement.scss";
+import Host from "../components/Host";
+import Rating from "../components/Rating";
 
 function Logement() {
   const { id } = useParams();
@@ -15,13 +17,19 @@ function Logement() {
         <Slideshow pictures={logement.pictures} />
       </div>
       <div className="logementContent-header">
-        <h1>{logement.title} </h1>
-        <p>{logement.location}</p>
-        <Tag
-          tag={logement.tags.map((tag) => (
-            <li key={tag}>{tag}</li>
-          ))}
-        />
+        <div className="logementContent-header_left">
+          <h1>{logement.title} </h1>
+          <p>{logement.location}</p>
+          <Tag
+            tag={logement.tags.map((tag) => (
+              <li key={tag}>{tag}</li>
+            ))}
+          />
+        </div>
+        <div className="logementContent-header_right">
+          <Host name={logement.host.name} photo={logement.host.picture} />
+          <Rating rating={logement.rating} />
+        </div>
       </div>
       <div className="collapseLogement">
         <Collapse title="Description" children={logement.description} />

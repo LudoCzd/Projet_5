@@ -1,0 +1,15 @@
+.profilHost img {
+  border-radius: 100px;
+  width: 30%;
+}
+
+.profilHost p {
+  color: var(--main-color);
+  width: 40%;
+  justify-content: end;
+}
+
+.profilHost {
+  display: flex;
+  justify-content: flex-end;
+}

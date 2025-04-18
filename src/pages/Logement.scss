@@ -16,3 +16,9 @@
   list-style: none;
   display: flex;
 }
+
+.logementContent-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
