@@ -7,7 +7,7 @@ import "./About.scss";
 function About() {
   return (
     <div className="divAbout">
-      <Banner image={imageSource} opacite={0.2} />
+      <Banner image={imageSource} opacite={0.2} className={"banner__about"} />
       <div className="divCollapse">
         <Collapse
           title="Fiabilité"

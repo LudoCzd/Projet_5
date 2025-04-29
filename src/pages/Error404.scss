@@ -1,24 +1,38 @@
-.titreError {
-  font-size: 200px;
-  color: var(--main-color);
-  margin: 0;
-  margin-bottom: 100px;
-  margin-top: 50px;
-}
-.messageError {
-  color: var(--main-color);
-  margin-bottom: 100px;
-}
 .pageError {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  .titreError {
+    font-size: 200px;
+    color: var(--main-color);
+    margin: 0;
+    margin-bottom: 100px;
+    margin-top: 50px;
+  }
+
+  .messageError {
+    color: var(--main-color);
+    margin-bottom: 100px;
+    font-weight: unset;
+  }
+
+  .pageErrorToHome {
+    text-decoration: none;
+    color: black;
+    text-decoration: underline;
+    margin-bottom: 100px;
+  }
 }
 
-.pageErrorToHome {
-  text-decoration: none;
-  color: black;
-  text-decoration: underline;
-  margin-bottom: 100px;
+@media (max-width: 768px) {
+  .pageError {
+    .titreError {
+      font-size: 110px;
+    }
+    .messageError {
+      font-size: 20px;
+    }
+  }
 }

@@ -16,17 +16,19 @@ function Logement() {
       <div>
         <Slideshow pictures={logement.pictures} />
       </div>
-      <div className="logementContent-header">
-        <div className="logementContent-header_left">
-          <h1>{logement.title} </h1>
-          <p>{logement.location}</p>
+      <div className="logementContent__header">
+        <div className="logementContent__header--left">
+          <div className="logementContent__header--left__title">
+            <h1>{logement.title} </h1>
+            <p>{logement.location}</p>
+          </div>
           <Tag
             tag={logement.tags.map((tag) => (
               <li key={tag}>{tag}</li>
             ))}
           />
         </div>
-        <div className="logementContent-header_right">
+        <div className="logementContent__header--right">
           <Host name={logement.host.name} photo={logement.host.picture} />
           <Rating rating={logement.rating} />
         </div>

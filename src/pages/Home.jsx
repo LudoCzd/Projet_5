@@ -11,7 +11,8 @@ function Home() {
       <Banner
         image={imageSource}
         texte="Chez vous, partout et ailleurs"
-        opacite={0.3}
+        opacite={0.6}
+        className={"banner__home"}
       />
       <div className="listCard">
         {logements.map((logement) => (

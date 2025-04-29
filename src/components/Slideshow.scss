@@ -4,22 +4,29 @@
   height: 400px;
   object-fit: cover;
   border-radius: 25px;
-  position: relative;
 }
 .fleche {
+  cursor: pointer;
   border: solid;
-  position: absolute;
-  top: 30%;
+
+  &.fleche--droite {
+    position: absolute;
+    top: 30%;
+  }
+
+  &.fleche--gauche {
+    position: absolute;
+    top: 30%;
+  }
 }
-.fleche .fleche--droite {
-  right: 100%;
-}
-.fleche .fleche--gauche {
-  left: 100%;
-}
-.imageLogement {
-  position: relative;
-}
+
 .currentImage {
   border: solid;
+  position: absolute;
+}
+
+@media (max-width: 768px) {
+  .imagePrincipale {
+    height: 300px;
+  }
 }

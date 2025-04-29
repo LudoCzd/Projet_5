@@ -16,11 +16,13 @@ function Slideshow({ pictures }) {
   return (
     <div className="slideContent">
       <div className="imagesLogement">
-        <img
-          src={pictures[current]}
-          className="imagePrincipale"
-          alt={`Photo ${current + 1} sur ${pictures.length}`}
-        />
+        <div>
+          <img
+            src={pictures[current]}
+            className="imagePrincipale"
+            alt={`Photo ${current + 1} sur ${pictures.length}`}
+          />
+        </div>
         {pictures.length > 1 && (
           <>
             <img
