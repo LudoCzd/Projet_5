@@ -7,10 +7,23 @@
   flex-wrap: wrap;
   justify-content: center;
 }
+.responsiveRetour {
+  display: none;
+}
 
 @media (max-width: 768px) {
   .listCard {
     background-color: #fff;
     margin: 0;
+  }
+  .responsiveRetour {
+    display: block;
+  }
+  .banner {
+    .banner__home {
+      .titreBanner {
+        font-size: 20px;
+      }
+    }
   }
 }

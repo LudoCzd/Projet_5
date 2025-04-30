@@ -10,14 +10,14 @@
 
   &.fleche--droite {
     position: absolute;
-    top: 30%;
-    right: 6%;
+    top: 31%;
+    right: 17%;
   }
 
   &.fleche--gauche {
     position: absolute;
-    top: 30%;
-    left: 6%;
+    top: 31%;
+    left: 17%;
   }
 }
 
@@ -31,5 +31,19 @@
 @media (max-width: 768px) {
   .imagePrincipale {
     height: 300px;
+  }
+  .currentImage {
+    display: none;
+  }
+  .fleche {
+    width: 20px;
+
+    &.fleche--droite {
+      right: 10%;
+    }
+
+    &.fleche--gauche {
+      left: 10%;
+    }
   }
 }

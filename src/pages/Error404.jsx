@@ -8,7 +8,8 @@ function Error404() {
       <div className="pageError">
         <h1 className="titreError">404</h1>
         <h2 className="messageError">
-          Oups! La page que vous demandez n'existe pas.
+          Oups! La page que <br className="responsiveRetour" />
+          vous demandez n'existe pas.
         </h2>
         <Link className="pageErrorToHome" to="/">
           Retourner sur la page d'accueil

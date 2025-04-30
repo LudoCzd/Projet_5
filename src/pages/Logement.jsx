@@ -7,10 +7,14 @@ import Tag from "../components/Tag";
 import "./Logement.scss";
 import Host from "../components/Host";
 import Rating from "../components/Rating";
+import Error404 from "./Error404";
 
 function Logement() {
   const { id } = useParams();
   const logement = logements.find((logement) => logement.id === id);
+  if (!logement) {
+    return <Error404 />;
+  }
   return (
     <div className="logementContent">
       <div>

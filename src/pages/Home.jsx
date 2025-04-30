@@ -10,9 +10,13 @@ function Home() {
     <div>
       <Banner
         image={imageSource}
-        texte="Chez vous, partout et ailleurs"
         opacite={0.6}
         className={"banner__home"}
+        texte={
+          <>
+            Chez vous, <br className="responsiveRetour" /> partout et ailleurs
+          </>
+        }
       />
       <div className="listCard">
         {logements.map((logement) => (

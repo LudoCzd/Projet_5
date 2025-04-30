@@ -30,12 +30,25 @@ nav {
     display: flex;
 
     img {
-      width: 120px;
+      width: 160px;
     }
     .lien-header {
       a {
-        font-size: 16px;
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: 500;
       }
+    }
+  }
+}
+
+@media (max-width: 460px) {
+  nav {
+    img {
+      width: 130px;
+    }
+    .lien-header a {
+      font-size: 10px;
     }
   }
 }

@@ -2,6 +2,11 @@
   display: flex;
   flex-direction: column;
 
+  .banner__about {
+    height: 175px;
+    margin-bottom: 20px;
+  }
+
   .divCollapse {
     display: flex;
     flex-direction: column;
@@ -10,7 +15,9 @@
 }
 
 @media (max-width: 768px) {
-  .banner__about {
-    height: 150px;
+  .divAbout {
+    .banner__about {
+      height: 150px;
+    }
   }
 }

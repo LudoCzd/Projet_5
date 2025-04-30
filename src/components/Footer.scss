@@ -13,3 +13,16 @@ footer {
     margin-bottom: 10px;
   }
 }
+
+@media (max-width: 768px) {
+  footer {
+    p {
+      padding-bottom: 45px;
+    }
+    img {
+      width: 150px;
+      margin-bottom: 0;
+      padding-top: 25px;
+    }
+  }
+}
