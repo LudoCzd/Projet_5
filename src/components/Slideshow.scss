@@ -7,22 +7,25 @@
 }
 .fleche {
   cursor: pointer;
-  border: solid;
 
   &.fleche--droite {
     position: absolute;
     top: 30%;
+    right: 6%;
   }
 
   &.fleche--gauche {
     position: absolute;
     top: 30%;
+    left: 6%;
   }
 }
 
 .currentImage {
-  border: solid;
+  color: white;
   position: absolute;
+  top: 54%;
+  right: 49%;
 }
 
 @media (max-width: 768px) {

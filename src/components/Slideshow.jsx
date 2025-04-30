@@ -25,21 +25,25 @@ function Slideshow({ pictures }) {
         </div>
         {pictures.length > 1 && (
           <>
-            <img
-              src={flechePrec}
-              alt="Image précédente"
-              className="fleche fleche--gauche"
-              onClick={imagePrec}
-            />
-            <img
-              src={flecheSuiv}
-              alt="Image suivante"
-              className="fleche fleche--droite"
-              onClick={imageSuiv}
-            />
-            <span className="currentImage">
+            <div>
+              <img
+                src={flechePrec}
+                alt="Image précédente"
+                className="fleche fleche--gauche"
+                onClick={imagePrec}
+              />
+            </div>
+            <div>
+              <img
+                src={flecheSuiv}
+                alt="Image suivante"
+                className="fleche fleche--droite"
+                onClick={imageSuiv}
+              />
+            </div>
+            <div className="currentImage">
               {current + 1}/{pictures.length}
-            </span>
+            </div>
           </>
         )}
       </div>
